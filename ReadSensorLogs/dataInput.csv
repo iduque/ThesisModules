@@ -1,0 +1,47 @@
+Participant Name: User-001
+Starting Time: 24.05.12 08:25:57.042
+
+1337844360442;24.05.12 08:26:00.442;ZigBee;16;Living_Room;DIO1;Sofa seatplace 1;0;Occupied
+1337844361690;24.05.12 08:26:01.690;GeoSystem;49;Living_Room;ID13;TV;47;On
+1337844378928;24.05.12 08:26:18.928;ZigBee;16;Living_Room;DIO1;Sofa seatplace 1;1;Free
+1337844388476;24.05.12 08:26:28.476;ZigBee;3;Kitchen;DIO2;Ceiling cupboard door left;1;Open
+1337844392594;24.05.12 08:26:32.594;ZigBee;3;Kitchen;DIO2;Ceiling cupboard door left;0;Closed
+1337844412219;24.05.12 08:26:52.219;GeoSystem;56;Kitchen;ID20;Toaster;804;On
+1337844423607;24.05.12 08:27:03.607;ZigBee;3;Kitchen;DIO2;Ceiling cupboard door left;1;Open
+1337844425666;24.05.12 08:27:05.666;ZigBee;3;Kitchen;DIO2;Ceiling cupboard door left;0;Closed
+1337844427725;24.05.12 08:27:07.725;ZigBee;4;Kitchen;DIO3;Ceiling cupboard door middle;1;Open
+1337844435993;24.05.12 08:27:15.993;ZigBee;4;Kitchen;DIO3;Ceiling cupboard door middle;0;Closed
+1337844438053;24.05.12 08:27:18.053;ZigBee;5;Kitchen;DIO4;Ceiling cupboard door right;1;Open
+1337844442171;24.05.12 08:27:22.171;ZigBee;5;Kitchen;DIO4;Ceiling cupboard door right;0;Closed
+1337844446227;24.05.12 08:27:26.227;GeoSystem;50;Kitchen;ID14;Fridge;24;On
+1337844455493;24.05.12 08:27:35.493;GeoSystem;50;Kitchen;ID14;Fridge;5;Off
+1337844467864;24.05.12 08:27:47.864;GeoSystem;56;Kitchen;ID20;Toaster;0;Off
+1337844472029;24.05.12 08:27:52.029;GeoSystem;56;Kitchen;ID20;Toaster;417;On
+1337844489517;24.05.12 08:28:09.517;GeoSystem;50;Kitchen;ID14;Fridge;30;On
+1337844495741;24.05.12 08:28:15.741;GeoSystem;50;Kitchen;ID14;Fridge;0;Off
+1337844504072;24.05.12 08:28:24.072;ZigBee;7;Kitchen;DIO11;Floor cupboard drawer right;1;Open
+1337844508190;24.05.12 08:28:28.190;ZigBee;7;Kitchen;DIO11;Floor cupboard drawer right;0;Closed
+1337844530342;24.05.12 08:28:50.342;ZigBee;30;Dining_Area;DIO12;Cupboard small drawer top;1;Open
+1337844544772;24.05.12 08:29:04.772;ZigBee;30;Dining_Area;DIO12;Cupboard small drawer top;0;Closed
+1337844564288;24.05.12 08:29:24.288;GeoSystem;56;Kitchen;ID20;Toaster;0;Off
+1337844605160;24.05.12 08:30:05.160;ZigBee;7;Kitchen;DIO11;Floor cupboard drawer right;1;Open
+1337844609278;24.05.12 08:30:09.278;ZigBee;7;Kitchen;DIO11;Floor cupboard drawer right;0;Closed
+1337844680555;24.05.12 08:31:20.555;GeoSystem;50;Kitchen;ID14;Fridge;30;On
+1337844682708;24.05.12 08:31:22.708;GeoSystem;50;Kitchen;ID14;Fridge;0;Off
+1337844695375;24.05.12 08:31:35.375;ZigBee;16;Living_Room;DIO1;Sofa seatplace 1;0;Occupied
+1337844902263;24.05.12 08:35:02.263;GeoSystem;49;Living_Room;ID13;TV;1;Off
+1337844905055;24.05.12 08:35:05.055;ZigBee;16;Living_Room;DIO1;Sofa seatplace 1;1;Free
+1337844933197;24.05.12 08:35:33.197;ZigBee;1;Kitchen;AD0;Water Pipe Sink Hot;27.500;On
+1337844986830;24.05.12 08:36:26.830;ZigBee;26;Dining_Area;DIO7;Cupboard small door left;1;Open
+1337844990964;24.05.12 08:36:30.964;ZigBee;26;Dining_Area;DIO7;Cupboard small door left;0;Closed
+1337845003319;24.05.12 08:36:43.319;ZigBee;30;Dining_Area;DIO12;Cupboard small drawer top;1;Open
+1337845009560;24.05.12 08:36:49.560;ZigBee;30;Dining_Area;DIO12;Cupboard small drawer top;0;Closed
+1337845016236;24.05.12 08:36:56.236;ZigBee;15;Living_Room;DIO0;Sofa seatplace 0;0;Occupied
+1337845018296;24.05.12 08:36:58.296;ZigBee;15;Living_Room;DIO0;Sofa seatplace 0;1;Free
+1337845018296;24.05.12 08:36:58.296;ZigBee;16;Living_Room;DIO1;Sofa seatplace 1;0;Occupied
+1337845038498;24.05.12 08:37:18.498;ZigBee;1;Kitchen;AD0;Water Pipe Sink Hot;42.700;Off
+1337845055299;24.05.12 08:37:35.299;ZigBee;16;Living_Room;DIO1;Sofa seatplace 1;1;Free
+1337845063130;24.05.12 08:37:43.130;ZigBee;20;Dining_Area;DIO0;Chair seatplace 0;0;Occupied
+1337845070712;24.05.12 08:37:50.712;GeoSystem;57;Dining_Area;ID21;Computer Dining Area;19;On
+
+Ending Time: 24.05.12 08:38:51.053

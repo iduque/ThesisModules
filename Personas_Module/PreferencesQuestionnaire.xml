@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Questionnaire User="">
+	<Question Id="1" Title="Which of these websites would you prefer to check the local weather?" Type="SingleChoice" Required="true" Statistics="false">
+		<Text Selected="true" Value="http://www.bbc.co.uk/weather" TextInput="false">BBC Weather</Text>
+        <Text Selected="false" Value="http://www.accuweather.com/" TextInput="false">Accuweather</Text>
+        <Text Selected="false" Value="http://www.metoffice.gov.uk/" TextInput="false">Met Office Weather</Text>
+        <Text Selected="false" Value="http://uk.weather.com/" TextInput="false">UK Weather</Text>
+    </Question>
+    <Question Id="2" Title="Which of these websites would you prefer to check news?" Type="SingleChoice" Required="true" Statistics="false">
+        <Text Selected="true" Value="http://www.bbc.co.uk/news/" TextInput="false">BBC News</Text>
+        <Text Selected="false" Value="http://www.telegraph.co.uk/" TextInput="false">The Telegraph News</Text>
+        <Text Selected="false" Value="http://www.thetimes.co.uk/" TextInput="false">The Times News</Text>
+        <Text Selected="false" Value="http://www.guardian.co.uk/" TextInput="false">The Guardian News</Text>
+    </Question>
+    <Question Id="3" Title="Which of these websites would you prefer to listen to online music?" Type="SingleChoice" Required="true" Statistics="false">
+		<Text Selected="true" Value="http://grooveshark.com" TextInput="false">Grooveshark</Text>
+		<Text Selected="false" Value="http://last.fm/" TextInput="false">Last FM</Text>
+        <Text Selected="false" Value="http://www.bbc.co.uk/music" TextInput="false">BBC Music</Text>
+    </Question>
+    <Question Id="4" Title="Which of these websites would you prefer to check online recipes?" Type="SingleChoice" Required="true" Statistics="false">
+        <Text Selected="false" Value="http://www.jamieoliver.com/recipes" TextInput="false">Jamie Oliver Recipes</Text>
+		<Text Selected="true" Value="http://www.bbc.co.uk/food/recipes" TextInput="false">BBC Recipes</Text>
+		<Text Selected="false" Value="http://www.waitrose.com/home/recipes.html" TextInput="false">Waitrose Recipes</Text>
+    </Question>
+    <Question Id="5" Title="Which robot light colour would you prefer when interacting with the companion?" Type="SingleChoice" Required="true" Statistics="false">
+        <Text Selected="false" Value="[1,0,0]" TextInput="false">Red</Text>
+		<Text Selected="true" Value="[0,1,0]" TextInput="false">Green</Text>
+		<Text Selected="false" Value="[0,0,1]" TextInput="false">Blue</Text>
+    </Question>
+	<!-- <Question Id="6" Title="Which robot sound would you prefer when interating with the companion?" Type="SingleChoice" Required="true"  Statistics="false">
+        <Text Selected="false" Value="Sound 1" TextInput="false">Sound 1</Text>
+        <Text Selected="false" Value="Sound 2" TextInput="false">Sound 2</Text>
+        <Text Selected="false" Value="Sound 3" TextInput="false">Sound 3</Text>
+        <Text Selected="false" Value="Sound 4" TextInput="false">Sound 4</Text>
+    </Question> -->
+	<Question Id="6" Title="Would you prefer the robot notifying you about different status/events by voice?" Type="SingleChoice" Required="true"  Statistics="false">
+        <Text Selected="true" Value="1" TextInput="false">Yes</Text>
+        <Text Selected="false" Value="2" TextInput="false">No</Text>
+    </Question>
+</Questionnaire>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Questionnaire User="User01 E2">
+  <Question Id="1" Required="true" Statistics="false" Title="How old are you?" Type="SingleChoice">
+    <Text Selected="true" TextInput="false" Value="1">Under 30</Text>
+    <Text Selected="false" TextInput="false" Value="2">30-45</Text>
+    <Text Selected="false" TextInput="false" Value="3">46-60</Text>
+    <Text Selected="false" TextInput="false" Value="4">Over 60</Text>
+  </Question>
+  <Question Id="2" Required="true" Statistics="false" Title="What is your gender?" Type="SingleChoice">
+    <Text Selected="true" TextInput="false" Value="1">Female</Text>
+    <Text Selected="false" TextInput="false" Value="2">Male</Text>
+  </Question>
+  <Question Id="3" Title="Which is approximately your height in cms?" Type="Text" Required="true" Statistics="false">
+	<Text Selected="true" Value="1" TextInput="false">160</Text>
+  </Question>
+  <Question Id="4" Title="Are you...?" Type="SingleChoice" Required="true" Statistics="true">
+	<Text Selected="false" Value="1" TextInput="false">Left-Hander</Text>
+	<Text Selected="true" Value="2" TextInput="false">Right-Hander</Text>
+	<Text Selected="false" Value="3" TextInput="false">Ambidextrous</Text>
+  </Question>
+  <Question Id="5" Required="true" Statistics="true" Title="What is your education level?" Type="SingleChoice">
+    <Text Selected="false" TextInput="false" Value="1">No high school diploma</Text>
+    <Text Selected="false" TextInput="false" Value="2">High school diploma</Text>
+    <Text Selected="false" TextInput="false" Value="3">2-year degree</Text>
+    <Text Selected="true" TextInput="false" Value="4">4-year degree</Text>
+    <Text Selected="false" TextInput="false" Value="5">Graduate or postgraduate degree</Text>
+  </Question>
+  <Question Id="6" Required="true" Statistics="false" Title="What is your profession or field of study?" Type="Text">
+    <Text Selected="true" TextInput="false" Value="1">Human Resources</Text>
+  </Question>
+  <Question Id="7" Required="true" Statistics="true" Title="Do you use computer technologies (e.g. computer/table/smartphone) as part of your daily life?" Type="SingleChoice">
+    <Text Selected="true" TextInput="true" Value="1">Yes - Number of hours per day:10</Text>
+    <Text Selected="false" TextInput="false" Value="2">No</Text>
+  </Question>
+  <Question Id="8" Required="false" Statistics="false" Title="If yes, what do you use these technologies for? (Choose as many as you wish)" Type="MultipleChoice">
+    <Text Selected="true" TextInput="false" Value="1">Browsing and emailing</Text>
+    <Text Selected="true" TextInput="false" Value="2">Social networking (Facebook, Skype, etc)</Text>
+    <Text Selected="true" TextInput="false" Value="3">Work / School work</Text>
+    <Text Selected="true" TextInput="false" Value="4">Music and films</Text>
+    <Text Selected="false" TextInput="false" Value="5">Video games</Text>
+    <Text Selected="false" TextInput="true" Value="6">Others (Please specify which):</Text>
+  </Question>
+  <Question Id="9" Required="true" Statistics="true" Title="The following questions are taken from the TIPI – the Ten Item Personality Inventory. They are intended to measure your personality.   It is included because we are interested in how different types of people view and interact with robots. You should rate the extent to which the pair of   traits applies to you, even if one characteristic applies more strongly than the other does. There are no right or wrong answers to this, and there is not   one 'right' personality type for our studies. Like all data we collect in this study, the personality questionnaire data will be treated anonymously.  Please choose your agreement or disagreement with theses statements" Type="Matrix">
+    <Subquestion Id="1" Required="true" Statistics="true" Title="Extraverted, Enthusiastic" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="true" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+    <Subquestion Id="2" Required="true" Statistics="true" Title="Critical, Quarrelsome" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="true" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+    <Subquestion Id="3" Required="true" Statistics="true" Title="Dependable, Self-disciplined" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="true" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+    <Subquestion Id="4" Required="true" Statistics="true" Title="Anxious, Easily Upset" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="true" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+    <Subquestion Id="5" Required="true" Statistics="true" Title="Open to New Experiences, Complex" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="true" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+    <Subquestion Id="6" Required="true" Statistics="true" Title="Reserved, Quiet" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="true" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+    <Subquestion Id="7" Required="true" Statistics="true" Title="Sympathetic, Warm" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="true" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+    <Subquestion Id="8" Required="true" Statistics="true" Title="Disorganised, Careless" Type="SingleChoice">
+      <Text Selected="true" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+    <Subquestion Id="9" Required="true" Statistics="true" Title="Calm, Emotionally Stable" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="true" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+    <Subquestion Id="10" Required="true" Statistics="true" Title="Conventional, Uncreative" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Disagree Strongly</Text>
+      <Text Selected="true" TextInput="false" Value="2">Disagree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="3">Disagree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="4">Neither Agree nor Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Agree a Little</Text>
+      <Text Selected="false" TextInput="false" Value="6">Agree Moderately</Text>
+      <Text Selected="false" TextInput="false" Value="7">Agree Strongly</Text>
+    </Subquestion>
+  </Question>
+  <Question Id="10" Required="true" Statistics="true" Title="Do you have previous experience interacting with robots?" Type="SingleChoice">
+    <Text Selected="false" TextInput="false" Value="1">None</Text>
+    <Text Selected="false" TextInput="false" Value="2">Rarely</Text>
+    <Text Selected="true" TextInput="false" Value="3">Occasionally</Text>
+    <Text Selected="false" TextInput="false" Value="4">Often</Text>
+  </Question>
+  <Question Id="11" Required="true" Statistics="true" Title="How would you describe your attitude towards robots?" Type="SingleChoice">
+    <Text Selected="false" TextInput="false" Value="1">Cautious</Text>
+    <Text Selected="false" TextInput="false" Value="2">Indefferent</Text>
+    <Text Selected="true" TextInput="false" Value="3">Curious</Text>
+    <Text Selected="false" TextInput="true" Value="4">Other:</Text>
+  </Question>
+  <Question Id="12" Required="true" Statistics="true" Title="How comfortable would you feel when..." Type="Matrix">
+    <Subquestion Id="1" Required="true" Statistics="true" Title="Being approached by a robot" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Very Uncomfortable</Text>
+      <Text Selected="false" TextInput="false" Value="2">Uncomfortable</Text>
+      <Text Selected="true" TextInput="false" Value="3">Neutral</Text>
+      <Text Selected="false" TextInput="false" Value="4">Comfortable</Text>
+      <Text Selected="false" TextInput="false" Value="5">Very Comfortable</Text>
+    </Subquestion>
+    <Subquestion Id="2" Required="true" Statistics="true" Title="Being physically close to a robot" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Very Uncomfortable</Text>
+      <Text Selected="false" TextInput="false" Value="2">Uncomfortable</Text>
+      <Text Selected="true" TextInput="false" Value="3">Neutral</Text>
+      <Text Selected="false" TextInput="false" Value="4">Comfortable</Text>
+      <Text Selected="false" TextInput="false" Value="5">Very Comfortable</Text>
+    </Subquestion>
+    <Subquestion Id="3" Required="true" Statistics="true" Title="Moving in the same room as a robot" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Very Uncomfortable</Text>
+      <Text Selected="false" TextInput="false" Value="2">Uncomfortable</Text>
+      <Text Selected="false" TextInput="false" Value="3">Neutral</Text>
+      <Text Selected="false" TextInput="false" Value="4">Comfortable</Text>
+      <Text Selected="true" TextInput="false" Value="5">Very Comfortable</Text>
+    </Subquestion>
+  </Question>
+  <Question Id="13" Required="true" Statistics="true" Title="How would you like to interact with the robot?" Type="Matrix">
+    <Subquestion Id="1" Required="true" Statistics="true" Title="As a friend" Type="SingleChoice">
+      <Text Selected="true" TextInput="false" Value="1">Completely Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="3">Neutral</Text>
+      <Text Selected="false" TextInput="false" Value="4">Agree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Completely Agree</Text>
+    </Subquestion>
+    <Subquestion Id="2" Required="true" Statistics="true" Title="As a servant" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Completely Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="3">Neutral</Text>
+      <Text Selected="true" TextInput="false" Value="4">Agree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Completely Agree</Text>
+    </Subquestion>
+    <Subquestion Id="3" Required="true" Statistics="true" Title="As a collegue" Type="SingleChoice">
+      <Text Selected="true" TextInput="false" Value="1">Completely Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="3">Neutral</Text>
+      <Text Selected="false" TextInput="false" Value="4">Agree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Completely Agree</Text>
+    </Subquestion>
+    <Subquestion Id="4" Required="true" Statistics="true" Title="As a pet" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Completely Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="3">Neutral</Text>
+      <Text Selected="true" TextInput="false" Value="4">Agree</Text>
+      <Text Selected="false" TextInput="false" Value="5">Completely Agree</Text>
+    </Subquestion>
+    <Subquestion Id="5" Required="true" Statistics="true" Title="As a tool" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Completely Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="2">Disagree</Text>
+      <Text Selected="false" TextInput="false" Value="3">Neutral</Text>
+      <Text Selected="false" TextInput="false" Value="4">Agree</Text>
+      <Text Selected="true" TextInput="false" Value="5">Completely Agree</Text>
+    </Subquestion>
+  </Question>
+  <Question Id="14" Required="true" Statistics="true" Title="What distance would you prefer to keep between you and the robot when interacting?" Type="SingleChoice">
+    <Text Selected="false" TextInput="false" Value="1">Personal Zone (0.45 to 1.2m)</Text>
+    <Text Selected="true" TextInput="false" Value="2">Social Zone (1.2 to 3.6m)</Text>
+    <Text Selected="false" TextInput="false" Value="3">Over 3.6m</Text>
+  </Question>
+  <Question Id="15" Required="true" Statistics="true" Title="Which of these robot approach directions would you prefer during the interaction?" Type="SingleChoice">
+    <Text Selected="false" TextInput="false" Value="1">Front-Left</Text>
+    <Text Selected="false" TextInput="false" Value="2">Front</Text>
+    <Text Selected="true" TextInput="false" Value="3">Front-Right</Text>
+  </Question>
+  <Question Id="16" Required="true" Statistics="true" Title="Which level of expresiveness would you prefer the robot to have during the interaction?" Type="SingleChoice">
+    <Text Selected="false" TextInput="false" Value="1">Low</Text>
+    <Text Selected="false" TextInput="false" Value="2">Medium</Text>
+    <Text Selected="true" TextInput="false" Value="3">High</Text>
+  </Question>
+  <Question Id="17" Required="true" Statistics="true" Title="Which level of proactiveness would you prefer the robot to have during the interaction?" Type="SingleChoice">
+    <Text Selected="false" TextInput="false" Value="1">Low</Text>
+    <Text Selected="true" TextInput="false" Value="2">Medium</Text>
+    <Text Selected="false" TextInput="false" Value="3">High</Text>
+  </Question>
+  <Question Id="18" Required="true" Statistics="true" Title="What level of assistance or company (e.g. the robot providing social company by staying close)   would you prefer during the following activities of your daily life?" Type="Matrix">
+    <Subquestion Id="1" Required="true" Statistics="true" Title="Watching the Television" Type="SingleChoice">
+      <Text Selected="true" TextInput="false" Value="1">Low</Text>
+      <Text Selected="false" TextInput="false" Value="2">Medium</Text>
+      <Text Selected="false" TextInput="false" Value="3">High</Text>
+    </Subquestion>
+    <Subquestion Id="2" Required="true" Statistics="true" Title="Using the Computer" Type="SingleChoice">
+      <Text Selected="true" TextInput="false" Value="1">Low</Text>
+      <Text Selected="false" TextInput="false" Value="2">Medium</Text>
+      <Text Selected="false" TextInput="false" Value="3">High</Text>
+    </Subquestion>
+    <Subquestion Id="3" Required="true" Statistics="true" Title="Reading a book or a magazine" Type="SingleChoice">
+      <Text Selected="true" TextInput="false" Value="1">Low</Text>
+      <Text Selected="false" TextInput="false" Value="2">Medium</Text>
+      <Text Selected="false" TextInput="false" Value="3">High</Text>
+    </Subquestion>
+    <Subquestion Id="4" Required="true" Statistics="true" Title="Preparing Food or a Drink" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Low</Text>
+      <Text Selected="false" TextInput="false" Value="2">Medium</Text>
+      <Text Selected="true" TextInput="false" Value="3">High</Text>
+    </Subquestion>
+    <Subquestion Id="5" Required="true" Statistics="true" Title="Laying the Table" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Low</Text>
+      <Text Selected="true" TextInput="false" Value="2">Medium</Text>
+      <Text Selected="false" TextInput="false" Value="3">High</Text>
+    </Subquestion>
+    <Subquestion Id="6" Required="true" Statistics="true" Title="Cleaning the Table" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Low</Text>
+      <Text Selected="true" TextInput="false" Value="2">Medium</Text>
+      <Text Selected="false" TextInput="false" Value="3">High</Text>
+    </Subquestion>
+    <Subquestion Id="7" Required="true" Statistics="true" Title="Alert when Doorbell Rings" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Low</Text>
+      <Text Selected="false" TextInput="false" Value="2">Medium</Text>
+      <Text Selected="true" TextInput="false" Value="3">High</Text>
+    </Subquestion>
+    <Subquestion Id="8" Required="true" Statistics="true" Title="Reminder Tasks (e.g. appointments)" Type="SingleChoice">
+      <Text Selected="false" TextInput="false" Value="1">Low</Text>
+      <Text Selected="false" TextInput="false" Value="2">Medium</Text>
+      <Text Selected="true" TextInput="false" Value="3">High</Text>
+    </Subquestion>
+  </Question>
+</Questionnaire>
