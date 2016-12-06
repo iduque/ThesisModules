@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : activiesdata.xml
+    Author     : id11ab
+    Description: Definition of the activities performed in the Robot House
+-->
+<Activities>
+    <Activity Name="Sitting_Living_Room">
+        <Duration>Nil</Duration> <!-- miliseconds -->
+        <Location>Living_Room</Location>
+        <Contexts></Contexts> <!-- List of <Context Status="(activated)-(deactivated)-(activated/deactivated)-(deactivated/nonactivated)" Time="(+/-)miliseconds">Context_Name</Context> -->
+        <Threshold>0.25</Threshold> 
+        <Sensors> <!-- List of <Sensor Status="on/off" Obligatory="true/false" Weight="Double">Sensor_Name</Sensor> -->
+            <Sensor Status="on" Obligatory="true" Weight="25">Sofa seatplace 0</Sensor>
+            <Sensor Status="on" Obligatory="true" Weight="25">Sofa seatplace 1</Sensor>
+            <Sensor Status="on" Obligatory="true" Weight="25">Sofa seatplace 2</Sensor>
+            <Sensor Status="on" Obligatory="true" Weight="25">Sofa seatplace 3</Sensor>
+			<Sensor Status="on" Obligatory="true" Weight="25">Sofa seatplace 4</Sensor>
+        </Sensors>   
+    </Activity>
+    <!-- <Activity Name="Standing_Up_Living_Room">
+        <Duration>Nil</Duration>
+        <Location>Living_Room</Location>
+        <Contexts></Contexts>
+        <Threshold>0.25</Threshold> 
+        <Sensors>
+            <Sensor Status="off" Obligatory="true" Weight="25">Sofa seatplace 0</Sensor>
+            <Sensor Status="off" Obligatory="true" Weight="25">Sofa seatplace 1</Sensor>
+            <Sensor Status="off" Obligatory="true" Weight="25">Sofa seatplace 2</Sensor>
+            <Sensor Status="off" Obligatory="true" Weight="25">Sofa seatplace 3</Sensor>
+			<Sensor Status="off" Obligatory="true" Weight="25">Sofa seatplace 4</Sensor>
+        </Sensors>   
+    </Activity> -->
+    <Activity Name="Sitting_Dining_Area">
+        <Duration>Nil</Duration>
+        <Location>Dining_Area</Location>
+        <Contexts></Contexts>
+        <Threshold>0.50</Threshold> 
+        <Sensors>
+            <Sensor Status="on" Obligatory="true" Weight="50">Chair seatplace 0</Sensor>
+            <Sensor Status="on" Obligatory="true" Weight="50">Chair seatplace 1</Sensor>
+        </Sensors>
+    </Activity>
+    <!--<Activity Name="Standing_Up_Dining_Area">
+        <Duration>Nil</Duration>
+        <Location>Dining_Area</Location>
+        <Contexts></Contexts>
+        <Threshold>0.5</Threshold> 
+        <Sensors>
+            <Sensor Status="off" Obligatory="true" Weight="50">Chair seatplace 0</Sensor>
+            <Sensor Status="off" Obligatory="true" Weight="50">Chair seatplace 1</Sensor>
+        </Sensors>   
+    </Activity>-->
+	<Activity Name="TV_ON">
+		<Duration>Nil</Duration>
+        <Location>Living_Room</Location>
+        <Contexts></Contexts>
+        <Threshold>1.0</Threshold> 
+        <Sensors>
+            <Sensor Status="on" Obligatory="true" Weight="100">TV</Sensor> 
+        </Sensors>
+	</Activity>
+    <Activity Name="Watching_TV">
+        <Duration>Nil</Duration>
+        <Location>Living_Room</Location>
+        <Contexts>
+            <Context Interval="0" Status="activated" >Sitting_Living_Room</Context>
+			<Context Interval="0" Status="activated" >TV_ON</Context>
+        </Contexts>
+        <Threshold>1.0</Threshold> 
+        <Sensors></Sensors>  
+    </Activity>
+	<Activity Name="Computer_ON">
+		<Duration>Nil</Duration>
+        <Location>Dining_Area</Location>
+        <Contexts></Contexts>
+        <Threshold>1.0</Threshold> 
+        <Sensors>
+            <Sensor Status="on" Obligatory="true" Weight="100">Computer Dining Area</Sensor>
+        </Sensors>
+	</Activity>
+    <Activity Name="Using_Computer_Dining_Area">
+        <Duration>Nil</Duration>
+        <Location>Dining_Area</Location>
+        <Contexts>
+            <Context Interval="0" Status="activated">Sitting_Dining_Area</Context>
+			<Context Interval="0" Status="activated">Computer_ON</Context>
+        </Contexts>
+        <Threshold>1.0</Threshold> 
+        <Sensors></Sensors>
+    </Activity>
+    <!--<Activity Name="Using_Computer_Living_Room">
+        <Duration>Nil</Duration>
+        <Location>Living_Room</Location>
+        <Contexts>
+            <Context Interval="0" Status="activated">Sitting_Living_Room</Context>
+			<Context Interval="0" Status="activated">Computer_ON</Context>
+        </Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors></Sensors>
+    </Activity> -->
+    <Activity Name="Spare_Time_Dining_Area">
+        <Duration>300000</Duration>
+        <Location>Living_Room</Location>
+        <Contexts>
+            <Context Interval="0" Status="activated">Sitting_Dining_Area</Context>
+        </Contexts>
+        <Threshold>1.0</Threshold> 
+        <Sensors>
+            <Sensor Status="on" Obligatory="false" Weight="100">Cupboard small door left</Sensor> <!-- Books, Music player, Video Game Console -->
+        </Sensors>
+    </Activity>
+    <Activity Name="Spare_Time_Living_Room">
+        <Duration>300000</Duration>
+        <Location>Living_Room</Location>
+        <Contexts>
+            <Context Interval="0" Status="activated">Sitting_Living_Room</Context>
+        </Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="false" Weight="100">Cupboard small door left</Sensor> <!-- Books, Music player, Video Game Console -->
+        </Sensors>
+    </Activity>
+    <Activity Name="Using_Microwave">
+        <Duration>Nil</Duration>
+        <Location>Kitchen</Location>
+        <Contexts></Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="true" Weight="100">Microwave</Sensor>
+        </Sensors>
+    </Activity>
+	<Activity Name="Using_Kettle"> 
+        <Duration>Nil</Duration>
+        <Location>Kitchen</Location>
+        <Contexts></Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="true" Weight="100">Kettle</Sensor>    
+        </Sensors>
+    </Activity>
+    <Activity Name="Using_Toaster">
+        <Duration>Nil</Duration>
+        <Location>Kitchen</Location>
+        <Contexts></Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="true" Weight="100">Toaster</Sensor>
+        </Sensors>
+    </Activity>
+    <Activity Name="Preparing_Food"> 
+        <Duration>300000</Duration>
+        <Location>Kitchen</Location>
+        <Contexts></Contexts>
+        <Threshold>0.26</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="false" Weight="22">Fridge</Sensor>
+            <Sensor Status="on" Obligatory="false" Weight="22">Microwave</Sensor>
+            <Sensor Status="on" Obligatory="false" Weight="22">Toaster</Sensor>
+            <Sensor Status="on" Obligatory="false" Weight="22">Ceiling cupboard door left</Sensor> <!-- Food (Cereals, Snacks,..) -->
+            <Sensor Status="on" Obligatory="false" Weight="4">Ceiling cupboard door middle</Sensor> <!-- Plates -->
+            <Sensor Status="on" Obligatory="false" Weight="4">Floor cupboard drawer middle</Sensor> <!-- Scissors, wooden spoons, sharp knifes, etc. -->
+            <Sensor Status="on" Obligatory="false" Weight="4">Floor cupboard drawer right</Sensor> <!-- Cutlery -->
+        </Sensors>
+    </Activity>
+    <Activity Name="Laying_Table">
+        <Duration>300000</Duration>
+        <Location>Living_Room</Location>
+        <Contexts>
+            <Context Interval="-300000" Status="activated/deactivated">Preparing_Food</Context>
+        </Contexts>
+        <Threshold>0.60</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="false" Weight="55">Cupboard small drawer top</Sensor> <!-- Napkings, Table Cloths -->
+            <Sensor Status="on" Obligatory="false" Weight="15">Ceiling cupboard door right</Sensor> <!-- Glasses, Mugs -->
+            <Sensor Status="on" Obligatory="false" Weight="15">Ceiling cupboard door middle</Sensor> <!-- Plates -->
+            <Sensor Status="on" Obligatory="false" Weight="15">Floor cupboard drawer right</Sensor> <!-- Cutlery -->	
+        </Sensors> 
+    </Activity>
+    <Activity Name="Having_Meal_Dining_Area">
+        <Duration>Nil</Duration>
+        <Location>Dining_Area</Location>
+        <Contexts>
+            <Context Interval="5000" Status="deactivated/nonactivated">Using_Microwave</Context>
+            <Context Interval="5000" Status="deactivated/nonactivated">Using_Toaster</Context>
+            <Context Interval="-300000" Status="activated/deactivated">Preparing_Food</Context>
+            <Context Interval="0" Status="activated">Sitting_Dining_Area</Context>
+        </Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors></Sensors>
+    </Activity>
+    <Activity Name="Having_Meal_Living_Room">
+        <Duration>Nil</Duration>
+        <Location>Living_Room</Location>
+        <Contexts>
+            <Context Interval="5000" Status="deactivated/nonactivated">Using_Microwave</Context>
+            <Context Interval="5000" Status="deactivated/nonactivated">Using_Toaster</Context>
+            <Context Interval="-300000" Status="activated/deactivated">Preparing_Food</Context>
+            <Context Interval="0" Status="activated">Sitting_Living_Room</Context>
+        </Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors></Sensors>
+    </Activity>
+    <Activity Name="Cleaning_Table_Dining_Area">
+        <Duration>120000</Duration>
+        <Location>Dining_Area</Location>
+        <Contexts>
+            <Context Interval="-120000" Status="deactivated">Having_Meal_Dining_Area</Context>
+            <Context Interval="-60000" Status="deactivated">Sitting_Dining_Area</Context>
+        </Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors></Sensors>
+    </Activity>
+    <Activity Name="Cleaning_Table_Living_Room">
+        <Duration>120000</Duration>
+        <Location>Living_Room</Location>
+        <Contexts>
+            <Context Interval="-120000" Status="deactivated">Having_Meal_Living_Room</Context>
+            <Context Interval="-60000" Status="deactivated">Sitting_Living_Room</Context>
+        </Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors></Sensors>
+    </Activity>
+    <Activity Name="Doorbell"> 
+        <Duration>Nil</Duration>
+        <Location>Hall</Location>
+        <Contexts></Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="true" Weight="100">Doorbell</Sensor>
+        </Sensors>
+    </Activity>
+    <Activity Name="Start_Dishwahser">
+        <Duration>Nil</Duration>
+        <Location>Kitchen</Location>
+        <Contexts></Contexts>
+        <Threshold>1.0</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="true" Weight="100">Dishwasher</Sensor> 
+        </Sensors>
+    </Activity>
+	<Activity Name="Preparing_Cold_Drink"> 
+        <Duration>120000</Duration>
+        <Location>Kitchen</Location>
+        <Contexts>
+			<Context Interval="180000" Status="deactivated/nonactivated">Using_Kettle</Context>
+		</Contexts>
+        <Threshold>0.7</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="false" Weight="15">Water Pipe Sink Hot</Sensor>
+            <Sensor Status="on" Obligatory="false" Weight="15">Water Pipe Sink Cold</Sensor>
+            <Sensor Status="on" Obligatory="false" Weight="55">Ceiling cupboard door right</Sensor> <!-- Glasses, Mugs -->
+            <Sensor Status="on" Obligatory="false" Weight="15">Fridge</Sensor>
+        </Sensors>
+    </Activity>
+    <Activity Name="Preparing_Hot_Drink"> 
+        <Duration>300000</Duration>
+        <Location>Kitchen</Location>
+        <Contexts></Contexts>
+        <Threshold>0.5</Threshold>
+        <Sensors>
+            <Sensor Status="on" Obligatory="false" Weight="10">Water Pipe Sink Hot</Sensor>
+            <Sensor Status="on" Obligatory="false" Weight="10">Water Pipe Sink Cold</Sensor>
+            <Sensor Status="on" Obligatory="false" Weight="20">Ceiling cupboard door right</Sensor> <!-- Glasses, Mugs -->
+            <Sensor Status="on" Obligatory="false" Weight="20">Floor cupboard door right</Sensor> <!-- Tea, Coffee -->
+            <Sensor Status="on" Obligatory="false" Weight="10">Fridge</Sensor>
+			<Sensor Status="on" Obligatory="false" Weight="30">Kettle</Sensor>
+        </Sensors>
+    </Activity>
+</Activities>

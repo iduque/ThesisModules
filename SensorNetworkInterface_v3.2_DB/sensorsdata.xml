@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : newXMLDocument.xml
+    Modified   : 04 September 2012
+    Author     : id11ab
+    Description: Sensors definition per Room
+-->
+
+<House>
+    <Room name="Kitchen">
+      <Network name="ZigBee" mac="[00:13:a2:00:40:32:de:87]!">
+        <Sensor channel="AD0">                                 <!-- Channel descriptor -->
+            <id>1</id>                           <!-- This ID is only relevant for logging -->
+            <name>Water Pipe Sink Hot</name>          <!-- Channel name -->
+            <type>TEMPERATURE_MCP9700_HOT</type> <!-- Channel type -->
+        </Sensor>
+        <Sensor channel="AD1">
+            <id>2</id>
+            <name>Water Pipe Sink Cold</name>
+            <type>TEMPERATURE_MCP9700_COLD</type>
+        </Sensor>
+        <Sensor channel="DIO2">
+            <id>3</id>
+            <name>Ceiling cupboard door left</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO3">
+            <id>4</id>
+            <name>Ceiling cupboard door middle</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO4">
+            <id>5</id>
+            <name>Ceiling cupboard door right</name>
+            <type>CONTACT_REED</type> 
+        </Sensor>
+        <Sensor channel="DIO5">
+            <id>6</id>
+            <name>Floor cupboard drawer middle</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO11">
+            <id>7</id>
+            <name>Floor cupboard drawer right</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO7">
+            <id>8</id>
+            <name>Floor cupboard door middle</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO12">
+            <id>9</id>
+            <name>Floor cupboard door right</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO10">
+            <id>10</id>
+            <name>Floor cupboard door left</name>
+            <type>CONTACT_REED</type>
+        </Sensor>  
+      </Network>
+      <Network name="GeoSystem"  mac="GS">
+		<Sensor channel="ID07">
+            <id>44</id>
+            <name>Cooker</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+        <Sensor channel="ID14">
+            <id>50</id>
+            <name>Fridge</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>(p > 10 &amp;&amp; p &lt; 50) || (p > 112 &amp;&amp; p &lt; 500)</rule>
+        </Sensor>
+        <Sensor channel="ID15">
+            <id>51</id>
+            <name>Kettle</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+        <Sensor channel="ID18">
+            <id>54</id>
+            <name>Microwave</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+        <Sensor channel="ID19">
+            <id>55</id>
+            <name>Dishwasher</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+        <Sensor channel="ID20">
+            <id>56</id>
+            <name>Toaster</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+		<Sensor channel="ID22">  
+            <id>58</id>                          
+            <name>Coffee Machine</name>         
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+      </Network> 
+    </Room>
+
+    <Room name="Bathroom">
+      <Network name="ZigBee" mac="[00:13:a2:00:40:62:a9:52]!">
+        <Sensor channel="AD0">                                
+            <id>11</id>                           
+            <name>Water pipe Washbasin Hot</name>          
+            <type>TEMPERATURE_MCP9700_HOT</type> 
+        </Sensor>
+        <Sensor channel="AD1">
+            <id>12</id>
+            <name>Water pipe Washbasin Cold</name>
+            <type>TEMPERATURE_MCP9700_COLD</type>
+        </Sensor>
+        <Sensor channel="DIO2">
+            <id>13</id>
+            <name>Bathroom Door</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO3">
+            <id>14</id>
+            <name>Toilet Flush</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+      </Network>
+    </Room>
+    
+    <Room name="Bedroom">
+      <Network name="ZigBee" mac="[00:13:a2:00:40:62:a9:4f]!">
+        <Sensor channel="DIO0">
+            <id>31</id>
+            <name>Desk drawer bottom</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO1">
+            <id>32</id>
+            <name>Desk drawer middle</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO2">
+            <id>33</id>
+            <name>Desk drawer top</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO3">
+            <id>34</id>
+            <name>Desk door</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO4">
+            <id>35</id>
+            <name>Office chair</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+        <Sensor channel="DIO5">
+            <id>36</id>
+            <name>Bedroom door</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO7">
+            <id>37</id>
+            <name>Bed contact</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+        <Sensor channel="DIO10">
+            <id>38</id>
+            <name>Wardrobe door left</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO11">
+            <id>39</id>
+            <name>Wardrobe door middle</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO12">
+            <id>40</id>
+            <name>Wardrobe door right</name>
+            <type>CONTACT_REED</type>
+        </Sensor>
+      </Network>
+      <Network name="GeoSystem"  mac="GS">
+        <Sensor channel="ID16">  
+            <id>52</id>                          
+            <name>Computer Bedroom</name>         
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+        <Sensor channel="ID17">  
+            <id>53</id>                          
+            <name>Table Lamp</name>         
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+      </Network> 
+    </Room>
+
+    <Room name="Living_Room">
+     <Network name="ZigBee" mac="[00:13:a2:00:40:62:a9:4d]!">
+        <Sensor channel="DIO0">
+            <id>15</id>
+            <name>Sofa seatplace 0</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+        <Sensor channel="DIO1">
+            <id>16</id>
+            <name>Sofa seatplace 1</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+        <Sensor channel="DIO2">
+            <id>17</id>
+            <name>Sofa seatplace 2</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+        <Sensor channel="DIO3">
+            <id>18</id>
+            <name>Sofa seatplace 3</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+        <Sensor channel="DIO4">
+            <id>19</id>
+            <name>Sofa seatplace 4</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+      </Network>
+      <Network name="GeoSystem"  mac="GS">
+        <Sensor channel="ID13">  
+            <id>49</id>                          
+            <name>TV</name>         
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+      </Network>  
+    </Room>
+    
+    <Room name="Dining_Area">
+     <Network name="ZigBee" mac="[00:13:a2:00:40:62:a9:4e]!">
+        <Sensor channel="DIO0">
+            <id>20</id>
+            <name>Chair seatplace 0</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+        <Sensor channel="DIO1">
+            <id>21</id>
+            <name>Chair seatplace 1</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+        <Sensor channel="DIO2">
+            <id>22</id>
+            <name>Table pressure 2</name>
+            <type>CONTACT_PRESSUREMAT</type>
+        </Sensor>
+        <Sensor channel="DIO4">
+          <id>23</id>
+          <name>Living room door</name>
+          <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO5">
+          <id>24</id>
+          <name>Cupboard big drawer bottom</name>
+          <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO3">
+          <id>25</id>
+          <name>Cupboard big drawer top</name>
+          <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO7">
+          <id>26</id>
+          <name>Cupboard small door left</name>
+          <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO6">
+          <id>27</id>
+          <name>Cupboard small door right</name>
+          <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO10">
+          <id>28</id>
+          <name>Cupboard small drawer bottom</name>
+          <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO11">
+          <id>29</id>
+          <name>Cupboard small drawer middle</name>
+          <type>CONTACT_REED</type>
+        </Sensor>
+        <Sensor channel="DIO12">
+          <id>30</id>
+          <name>Cupboard small drawer top</name>
+          <type>CONTACT_REED</type>
+        </Sensor>
+      </Network>
+      <Network name="GeoSystem"  mac="GS">	  
+		<Sensor channel="ID21">  
+            <id>57</id>                          
+            <name>Computer Dining Area</name>         
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 11</rule>
+        </Sensor>
+      </Network>
+    </Room>
+	
+    <Room name="Other">
+      <Network name="GeoSystem"  mac="GS">
+        <Sensor channel="ID01">  
+            <id>41</id>                          
+            <name>Lights exterior</name>         
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+        <Sensor channel="ID02">  
+            <id>42</id>                          
+            <name>Upstairs Lights</name>         
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 30</rule>
+        </Sensor>
+        <Sensor channel="ID03">  
+            <id>43</id>                          
+            <name>Downstairs Lights</name>         
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+        <Sensor channel="ID08">
+            <id>45</id>
+            <name>Garage</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 5</rule>
+        </Sensor>
+        <Sensor channel="ID09">
+            <id>46</id>
+            <name>Sockets</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 5</rule>
+        </Sensor>
+        <Sensor channel="ID10">
+            <id>47</id>
+            <name>Sockets Ext. and garden</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 5</rule>
+        </Sensor>
+        <Sensor channel="ID12">
+            <id>48</id>
+            <name>Mains Supply</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 10</rule>
+        </Sensor>
+        <Sensor channel="ID24">
+            <id>59</id>
+            <name>Doorbell</name>
+            <type>POWER CONSUMPTION MONITOR</type>
+            <rule>p > 1</rule>
+        </Sensor>
+       </Network>    
+    </Room>
+</House>
